@@ -36,7 +36,9 @@ void ColumnTable::Load(BaseDataLoader *loader) {
 
 int32_t ColumnTable::GetIntField(int32_t row_id, int32_t col_id) {
   // TODO: Implement this!
-  return 0;
+  int offset = num_cols_;
+  int idx = col_id * offset + row_id;
+  return *(int32_t*)&columns_[idx * FIXED_FIELD_LEN];
 }
 
 void ColumnTable::PutIntField(int32_t row_id, int32_t col_id, int32_t field) {
@@ -60,6 +62,9 @@ int64_t ColumnTable::PredicatedColumnSum(int32_t threshold1,
 
 int64_t ColumnTable::PredicatedAllColumnsSum(int32_t threshold) {
   // TODO: Implement this!
+  for(int i = 0; i < num_cols_; i++){
+    int32_t value = GetIntField(0, i);
+  }
   return 0;
 }
 

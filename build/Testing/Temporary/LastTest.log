@@ -1,10 +1,10 @@
-Start testing: Mar 25 21:26 CST
+Start testing: Mar 25 23:38 CST
 ----------------------------------------------------------
 1/6 Testing: database_project_column_sum_test
 1/6 Test: database_project_column_sum_test
 Command: "/home/oslab/Desktop/bytedance-database-project/build/test/lab2/column_sum_test"
 Directory: /home/oslab/Desktop/bytedance-database-project/build/test/lab2
-"database_project_column_sum_test" start time: Mar 25 21:26 CST
+"database_project_column_sum_test" start time: Mar 25 23:38 CST
 Output:
 ----------------------------------------------------------
 Running main() from /tmp/tmp_download/googletest/googletest/src/gtest_main.cc
@@ -14,19 +14,19 @@ Running main() from /tmp/tmp_download/googletest/googletest/src/gtest_main.cc
 [ RUN      ] ColumnSumTest.TestRowTable
 [       OK ] ColumnSumTest.TestRowTable (0 ms)
 [ RUN      ] ColumnSumTest.TestColumnTable
-[       OK ] ColumnSumTest.TestColumnTable (3 ms)
+[       OK ] ColumnSumTest.TestColumnTable (0 ms)
 [ RUN      ] ColumnSumTest.TestIndexedTable
-[       OK ] ColumnSumTest.TestIndexedTable (2 ms)
-[----------] 3 tests from ColumnSumTest (6 ms total)
+[       OK ] ColumnSumTest.TestIndexedTable (0 ms)
+[----------] 3 tests from ColumnSumTest (0 ms total)
 
 [----------] Global test environment tear-down
-[==========] 3 tests from 1 test suite ran. (6 ms total)
+[==========] 3 tests from 1 test suite ran. (0 ms total)
 [  PASSED  ] 3 tests.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"database_project_column_sum_test" end time: Mar 25 21:26 CST
+"database_project_column_sum_test" end time: Mar 25 23:38 CST
 "database_project_column_sum_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -34,7 +34,7 @@ Test Passed.
 2/6 Test: database_project_custom_table_test
 Command: "/home/oslab/Desktop/bytedance-database-project/build/test/lab2/custom_table_test"
 Directory: /home/oslab/Desktop/bytedance-database-project/build/test/lab2
-"database_project_custom_table_test" start time: Mar 25 21:26 CST
+"database_project_custom_table_test" start time: Mar 25 23:38 CST
 Output:
 ----------------------------------------------------------
 Running main() from /tmp/tmp_download/googletest/googletest/src/gtest_main.cc
@@ -61,7 +61,7 @@ Expected equality of these values:
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Failed.
-"database_project_custom_table_test" end time: Mar 25 21:26 CST
+"database_project_custom_table_test" end time: Mar 25 23:38 CST
 "database_project_custom_table_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -69,7 +69,7 @@ Test Failed.
 3/6 Test: database_project_predicated_all_columns_sum_test
 Command: "/home/oslab/Desktop/bytedance-database-project/build/test/lab2/predicated_all_columns_sum_test"
 Directory: /home/oslab/Desktop/bytedance-database-project/build/test/lab2
-"database_project_predicated_all_columns_sum_test" start time: Mar 25 21:26 CST
+"database_project_predicated_all_columns_sum_test" start time: Mar 25 23:38 CST
 Output:
 ----------------------------------------------------------
 Running main() from /tmp/tmp_download/googletest/googletest/src/gtest_main.cc
@@ -91,11 +91,11 @@ Expected equality of these values:
   166
   rt.PredicatedAllColumnsSum(3)
     Which is: 0
-[  FAILED  ] PredicatedAllColumnsSumTest.TestIndexedTable (3 ms)
-[----------] 3 tests from PredicatedAllColumnsSumTest (4 ms total)
+[  FAILED  ] PredicatedAllColumnsSumTest.TestIndexedTable (4 ms)
+[----------] 3 tests from PredicatedAllColumnsSumTest (5 ms total)
 
 [----------] Global test environment tear-down
-[==========] 3 tests from 1 test suite ran. (4 ms total)
+[==========] 3 tests from 1 test suite ran. (5 ms total)
 [  PASSED  ] 1 test.
 [  FAILED  ] 2 tests, listed below:
 [  FAILED  ] PredicatedAllColumnsSumTest.TestColumnTable
@@ -106,7 +106,7 @@ Expected equality of these values:
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Failed.
-"database_project_predicated_all_columns_sum_test" end time: Mar 25 21:26 CST
+"database_project_predicated_all_columns_sum_test" end time: Mar 25 23:38 CST
 "database_project_predicated_all_columns_sum_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -114,7 +114,7 @@ Test Failed.
 4/6 Test: database_project_predicated_column_sum_test
 Command: "/home/oslab/Desktop/bytedance-database-project/build/test/lab2/predicated_column_sum_test"
 Directory: /home/oslab/Desktop/bytedance-database-project/build/test/lab2
-"database_project_predicated_column_sum_test" start time: Mar 25 21:26 CST
+"database_project_predicated_column_sum_test" start time: Mar 25 23:38 CST
 Output:
 ----------------------------------------------------------
 Running main() from /tmp/tmp_download/googletest/googletest/src/gtest_main.cc
@@ -129,18 +129,18 @@ Expected equality of these values:
   49
   ct.PredicatedColumnSum(3, 5)
     Which is: 0
-[  FAILED  ] PredicatedColumnSumTest.ColumnTableTest (3 ms)
+[  FAILED  ] PredicatedColumnSumTest.ColumnTableTest (0 ms)
 [ RUN      ] PredicatedColumnSumTest.IndexedRowTableTest
 /home/oslab/Desktop/bytedance-database-project/test/lab2/predicated_column_sum_test.cc:28: Failure
 Expected equality of these values:
   49
   it.PredicatedColumnSum(3, 5)
     Which is: 0
-[  FAILED  ] PredicatedColumnSumTest.IndexedRowTableTest (0 ms)
-[----------] 3 tests from PredicatedColumnSumTest (4 ms total)
+[  FAILED  ] PredicatedColumnSumTest.IndexedRowTableTest (5 ms)
+[----------] 3 tests from PredicatedColumnSumTest (6 ms total)
 
 [----------] Global test environment tear-down
-[==========] 3 tests from 1 test suite ran. (4 ms total)
+[==========] 3 tests from 1 test suite ran. (6 ms total)
 [  PASSED  ] 1 test.
 [  FAILED  ] 2 tests, listed below:
 [  FAILED  ] PredicatedColumnSumTest.ColumnTableTest
@@ -148,10 +148,10 @@ Expected equality of these values:
 
  2 FAILED TESTS
 <end of output>
-Test time =   0.01 sec
+Test time =   0.02 sec
 ----------------------------------------------------------
 Test Failed.
-"database_project_predicated_column_sum_test" end time: Mar 25 21:26 CST
+"database_project_predicated_column_sum_test" end time: Mar 25 23:38 CST
 "database_project_predicated_column_sum_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -159,7 +159,7 @@ Test Failed.
 5/6 Test: database_project_predicated_update_test
 Command: "/home/oslab/Desktop/bytedance-database-project/build/test/lab2/predicated_update_test"
 Directory: /home/oslab/Desktop/bytedance-database-project/build/test/lab2
-"database_project_predicated_update_test" start time: Mar 25 21:26 CST
+"database_project_predicated_update_test" start time: Mar 25 23:38 CST
 Output:
 ----------------------------------------------------------
 Running main() from /tmp/tmp_download/googletest/googletest/src/gtest_main.cc
@@ -172,7 +172,7 @@ Expected equality of these values:
   9
   rt.PredicatedUpdate(3)
     Which is: 0
-[  FAILED  ] PredicatedUpdateTest.RowTableTest (0 ms)
+[  FAILED  ] PredicatedUpdateTest.RowTableTest (1 ms)
 [ RUN      ] PredicatedUpdateTest.ColumnTableTest
 /home/oslab/Desktop/bytedance-database-project/test/lab2/predicated_update_test.cc:22: Failure
 Expected equality of these values:
@@ -186,11 +186,11 @@ Expected equality of these values:
   9
   it.PredicatedUpdate(3)
     Which is: 0
-[  FAILED  ] PredicatedUpdateTest.IndexedRowTableTest (1 ms)
-[----------] 3 tests from PredicatedUpdateTest (2 ms total)
+[  FAILED  ] PredicatedUpdateTest.IndexedRowTableTest (2 ms)
+[----------] 3 tests from PredicatedUpdateTest (3 ms total)
 
 [----------] Global test environment tear-down
-[==========] 3 tests from 1 test suite ran. (2 ms total)
+[==========] 3 tests from 1 test suite ran. (3 ms total)
 [  PASSED  ] 0 tests.
 [  FAILED  ] 3 tests, listed below:
 [  FAILED  ] PredicatedUpdateTest.RowTableTest
@@ -202,7 +202,7 @@ Expected equality of these values:
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Failed.
-"database_project_predicated_update_test" end time: Mar 25 21:26 CST
+"database_project_predicated_update_test" end time: Mar 25 23:38 CST
 "database_project_predicated_update_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -210,7 +210,7 @@ Test Failed.
 6/6 Test: database_project_put_get_test
 Command: "/home/oslab/Desktop/bytedance-database-project/build/test/lab2/put_get_test"
 Directory: /home/oslab/Desktop/bytedance-database-project/build/test/lab2
-"database_project_put_get_test" start time: Mar 25 21:26 CST
+"database_project_put_get_test" start time: Mar 25 23:38 CST
 Output:
 ----------------------------------------------------------
 Running main() from /tmp/tmp_download/googletest/googletest/src/gtest_main.cc
@@ -218,14 +218,14 @@ Running main() from /tmp/tmp_download/googletest/googletest/src/gtest_main.cc
 [----------] Global test environment set-up.
 [----------] 3 tests from PutGetTest
 [ RUN      ] PutGetTest.RowTableTest
-[       OK ] PutGetTest.RowTableTest (0 ms)
+[       OK ] PutGetTest.RowTableTest (1 ms)
 [ RUN      ] PutGetTest.ColumnTableTest
 /home/oslab/Desktop/bytedance-database-project/test/lab2/put_get_test.cc:28: Failure
 Expected equality of these values:
   8
   ct.GetIntField(row_id, col_id)
     Which is: 0
-[  FAILED  ] PutGetTest.ColumnTableTest (0 ms)
+[  FAILED  ] PutGetTest.ColumnTableTest (4 ms)
 [ RUN      ] PutGetTest.IndexedRowTableTest
 /home/oslab/Desktop/bytedance-database-project/test/lab2/put_get_test.cc:38: Failure
 Expected equality of these values:
@@ -233,10 +233,10 @@ Expected equality of these values:
   it.GetIntField(row_id, col_id)
     Which is: 0
 [  FAILED  ] PutGetTest.IndexedRowTableTest (0 ms)
-[----------] 3 tests from PutGetTest (1 ms total)
+[----------] 3 tests from PutGetTest (6 ms total)
 
 [----------] Global test environment tear-down
-[==========] 3 tests from 1 test suite ran. (1 ms total)
+[==========] 3 tests from 1 test suite ran. (6 ms total)
 [  PASSED  ] 1 test.
 [  FAILED  ] 2 tests, listed below:
 [  FAILED  ] PutGetTest.ColumnTableTest
@@ -244,11 +244,11 @@ Expected equality of these values:
 
  2 FAILED TESTS
 <end of output>
-Test time =   0.00 sec
+Test time =   0.02 sec
 ----------------------------------------------------------
 Test Failed.
-"database_project_put_get_test" end time: Mar 25 21:26 CST
+"database_project_put_get_test" end time: Mar 25 23:38 CST
 "database_project_put_get_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Mar 25 21:26 CST
+End testing: Mar 25 23:38 CST
