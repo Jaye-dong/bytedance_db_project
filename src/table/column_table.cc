@@ -57,7 +57,15 @@ int64_t ColumnTable::ColumnSum() {
 int64_t ColumnTable::PredicatedColumnSum(int32_t threshold1,
                                          int32_t threshold2) {
   // TODO: Implement this!
-  return 0;
+  int res = 0;
+  for(int i = 0; i < num_rows_; i++){
+    int32_t value1 = GetIntField(1, i);
+    int32_t value2 = GetIntField(2, i);
+    if(value1 > threshold1 && value2 < threshold2) {
+      res += GetIntField(0, i);
+    }
+  }
+  return res;
 }
 
 int64_t ColumnTable::PredicatedAllColumnsSum(int32_t threshold) {

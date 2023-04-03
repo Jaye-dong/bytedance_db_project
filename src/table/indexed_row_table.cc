@@ -58,7 +58,15 @@ int64_t IndexedRowTable::ColumnSum() {
 int64_t IndexedRowTable::PredicatedColumnSum(int32_t threshold1,
                                              int32_t threshold2) {
   // TODO: Implement this!
-  return 0;
+  int64_t sum = 0;
+  for(int i = 0; i < num_rows_; i++){
+    int32_t value1 = GetIntField(i, 1);
+    int32_t value2 = GetIntField(i, 2);
+    if(value1 > threshold1 && value2 < threshold2){
+      sum += GetIntField(i, 0);
+    }
+  }
+  return sum;
 }
 
 int64_t IndexedRowTable::PredicatedAllColumnsSum(int32_t threshold) {
