@@ -32,7 +32,10 @@ void IndexedRowTable::Load(BaseDataLoader *loader) {
 
 int32_t IndexedRowTable::GetIntField(int32_t row_id, int32_t col_id) {
   // TODO: Implement this!
-  return 0;
+  int offset = num_cols_;
+  int idx = 0;
+  idx = offset * row_id + col_id;
+  return *(int32_t*)&rows_[idx * FIXED_FIELD_LEN];
 }
 
 void IndexedRowTable::PutIntField(int32_t row_id, int32_t col_id,
@@ -60,7 +63,17 @@ int64_t IndexedRowTable::PredicatedColumnSum(int32_t threshold1,
 
 int64_t IndexedRowTable::PredicatedAllColumnsSum(int32_t threshold) {
   // TODO: Implement this!
-  return 0;
+  int res = 0;
+  for(auto it = index_.begin(); it != index_.end(); it++){
+    if(it->first > threshold){
+      for(int i : it->second) {
+        for(int j = 0; j < num_rows_; j++){
+          res += GetIntField(i, j);
+        }
+      }
+    }
+  }
+  return res;
 }
 
 int64_t IndexedRowTable::PredicatedUpdate(int32_t threshold) {
