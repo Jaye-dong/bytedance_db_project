@@ -75,6 +75,13 @@ int64_t RowTable::PredicatedAllColumnsSum(int32_t threshold) {
 
 int64_t RowTable::PredicatedUpdate(int32_t threshold) {
   // TODO: Implement this!
-  return 0;
+  int rows_update = 0;
+  for(int i = 0; i < num_rows_; i++){
+    if(GetIntField(i, 0) < threshold){
+      PutIntField(i, 3, GetIntField(i, 3) + GetIntField(i, 2));
+      rows_update++;
+    }
+  }
+  return rows_update;
 }
 } // namespace bytedance_db_project
